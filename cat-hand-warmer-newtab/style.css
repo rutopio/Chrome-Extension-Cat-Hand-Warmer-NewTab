@@ -1,0 +1,241 @@
+@import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro);
+
+:root {
+  --color-bg: #E6E3DB;
+  --color-bg-light: #BDC0BA;
+  --color-fg: #3A3226;
+  --color-link-hover: #8fbcbb;
+  --color-link: #60373E;
+  --font-family: "Source Code Pro", monospace;
+  --workpercentage: 0;
+}
+
+* {
+  box-sizing: border-box;
+  /* text-transform: lowercase; */
+}
+
+html,
+body {
+  overflow: hidden;
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-family);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+header div#img {
+  width: 40%;
+  height: 100%;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header div#img img {
+  width: 25vw;
+  animation: fadeInUp 1s both;
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  animation: fadeInUp 1s;
+}
+
+main #content {
+  left: 0;
+  position: absolute;
+  width: 85%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+main #head {
+  text-align: left;
+}
+
+main #links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+main #links section {
+  margin: 0 15px;
+}
+
+form {
+  font-size: 2.15vw;
+  white-space: nowrap;
+}
+
+form input {
+  width: 80%;
+  display: inline-block;
+  border: none;
+  background-color: var(--color-bg-light);
+  padding: 10px;
+  color: var(--color-fg);
+  font-family: var(--font-family);
+  font-size: 2vw;
+  border-radius: 8px;
+}
+
+form input:focus {
+  outline: none;
+
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 0.75vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+footer * {
+  height: min-content;
+}
+
+ul {
+  text-align: center;
+  padding: 0;
+}
+
+li {
+  font-size: 0.9vw;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-link);
+  transition-duration: 0.2s;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+  transition-duration: 0.2s;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.blinking {
+  animation: opacity 10s linear infinite;
+  opacity: 1;
+}
+
+
+.progress {
+  background: rgba(256,256,256,0.8);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: center;
+  padding: 0 5px;
+  display: flex;
+  height: 5px;
+  width: 100%;
+}
+
+.progress-value {
+  animation: load 1s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #BDC0BA;
+  height: 5px;
+  width: 0;
+}
+
+@keyframes load {
+  0% { width: 0; }
+  100% { width: var(--workpercentage, 50%); }
+}
+
+/* KEYFRAMES */
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -1rem, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 2rem, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+

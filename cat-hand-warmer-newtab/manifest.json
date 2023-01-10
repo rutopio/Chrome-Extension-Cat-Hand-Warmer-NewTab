@@ -1,0 +1,10 @@
+{
+  "name": "Cat Hand Warmer NewTab",
+  "description": "made by ChingRu@rutopio",
+  "version": "1.0.0",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "manifest_version": 2,
+  "permissions": ["storage", "bookmarks"]
+}
