@@ -8,7 +8,7 @@
 ## Install
 
 1. Download and unzip it.
-2. Chrome Extensions > Load unpacked > select the folder of `newtab`.
+2. Chrome Extensions > Load unpacked > select the folder of `cat-hand-warmer-newtab`.
 
 
 ## Feature
