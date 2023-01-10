@@ -17,7 +17,7 @@
 2. Show the time, date, weather and temperature.
 3. Show the working time progress bar to get off.
 4. Google search bar.
-5. **Cat, cat, and cat**
+5. **Meow, meow, and meow! 😽**
 
 ## Custom Parameter
 
@@ -25,8 +25,8 @@ In `script.js`:
 
 - `apiKey`: string, api from OpenWeather
   - Read more: https://openweathermap.org/appid
-- `lat`: float, latitude of place.
-- `lon`: float, longitude of place.
+- `lat`: float, latitude of place. For example, Taipei is `25.05`.
+- `lon`: float, longitude of place. For example, Taipei is `121.53`
 - `workdayStartString`: string, `HH:MM` formatted. Start working time.
 - `workdayEndString`: string, `HH:MM` formatted. Go home time.
 
