@@ -8,10 +8,10 @@
 ## Install
 
 1. Download and unzip it.
-2. Chrome Extensions > Load unpacked > select the folder of `cat-hand-warmer-newtab`.
+2. *Chrome Extensions > Load unpacked* > select the folder of `cat-hand-warmer-newtab`.
 
 
-## Feature
+## Features
 
 1. Customized links.
 2. Show the local time, date, weather and temperature.
@@ -23,16 +23,16 @@
 
 In `script.js`:
 
-- `apiKey`: string, api from OpenWeather
+- `apiKey`: string, api key from OpenWeather
   - Read more: https://openweathermap.org/appid
-- `lat`: float, latitude of place. For example, Taipei is `25.05`.
-- `lon`: float, longitude of place. For example, Taipei is `121.53`
-- `workdayStartString`: string, `HH:MM` formatted. Start working time.
-- `workdayEndString`: string, `HH:MM` formatted. Home time!
+- `lat`: float, latitude of place. For example, Taipei, is `25.05`.
+- `lon`: float, longitude of place. For example, Taipei, is `121.53`
+- `workdayStartString`: string, `HH:MM` formatted (24Hr). Start working time.
+- `workdayEndString`: string, `HH:MM` formatted (24Hr). Home time!
 
-## Custom Links
+## Custom Link
 
-You can custom the links and titles in `index.html`.
+You can custom the links, icon, and titles in `index.html`.
 
 ## Image Source
 
