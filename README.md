@@ -14,8 +14,8 @@
 ## Features
 
 1. Customized links.
-2. Show the local time, date, weather and temperature.
-3. Show the working time progress bar.
+2. Local time, date, weather and temperature (source: OpenWeather).
+3. working time progress bar.
 4. Google search.
 5. **Meow, meow, and meow! 😽**
 
